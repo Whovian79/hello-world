@@ -15,3 +15,19 @@ console.log(
 
 // Template Literals and Interpolation
 console.log(`My name is ${name}`);
+
+//Java Script is a Dynamically Typed language. . . You are free to swap/change data at anytime.
+
+//Create a variable 'timeOfDay' and assign it a string
+const timeOfDay = `Morning`;
+console.log(`It should be illegal to force people to get up at  ${timeOfDay}`);
+
+//console.log(typeof timeOfDay); //tells us the type of data
+
+//JS will COERCE our data types into whatever it feels is appropriate. #IMPLICIT COERCION.
+console.log("hello" + 22);
+//EXPLICIT COERCION
+console.log(Number(false));
+
+console.log(parseInt("123.45"));
+console.log(parseFloat("123.45"));
