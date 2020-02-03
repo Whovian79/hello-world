@@ -1,25 +1,17 @@
-// PRIMITIVE data
+const name = "AJ"; //Reserves some space in memory and assign it a name. Cannot make changes with "const".
+let age = 23;
+// age =24; //"Let" key allows changes to variable.
 
-//We need a way to reuse or access data, so we create a REFERENCE.
-//'const' alerts JS to reserve some space in memory
-//We provide a name for this space in memory
-// We use the ASSIGNMENT OPERATOR '='
-//THIS TAKES THE VALUE on the right and assigns to the NAME REFERENCE.
-const myString = "strinadfasdfdsag";
-// Use 'let' ONLY if we plan to RE=ASSINGN  the VALUE REFERENCED by the VARIABLE
-let myNum = 23;
+// const modelTypeOfTardis = 40;
 
-// myStringIsThis = "something else";
+//we are accessing an OBJECT called 'console' and using DOT NOTATION to access a KEY.
+//That KEY is a METHOD, so we INOVKE it with ().
+// We also pass in an ARGUMENT as a STRING.
+//ARGUMENTS provide additional information that a METHOD needs to do its job.
+console.log("Wold, hello!");
+console.log(
+  "My name is " + name + "and I wish my age was still " + age + "years."
+);
 
-//homework 29 January
-const species = "Time Lord";
-let currentRegen = null;
-currentRegen = 4;
-
-//3 primitive data types
-//string
-("supercalafragalisticexpialadocious");
-//number
-let myPayRate = 3.14;
-//boolean
-//I understand this is true and false (if/then) I just can't think of a good example right now...
+// Template Literals and Interpolation
+console.log(`My name is ${name}`);
