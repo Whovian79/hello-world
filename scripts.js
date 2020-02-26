@@ -1,20 +1,24 @@
-// Log the numbers from 1 to 10.
-// In parentheses, specify 3 things -start- stop - increment
-//'for' limits the use of GLOBAL VARIABLE for 'i'.
-for (let i = 1; i <= 10; i++) {
-  console.log(i);
-}
+//IMPLICIT CONVERSION
+// || means OR
+// If first EXPRESSION is 'truthy' we don't EVALUATE the right hand-side.
+//const name = prompt("What is your name?") || "No name entered!";
+//console.log(name);
 
-//Add numbers from 1 to 10.
-let total = 0;
-
-for (let i = 1; i <= 10; i++) {
-  console.log("total is", total);
-  console.log("i is", i);
+//TODO: Using 'while' keep 'prompting' while the name field is blank.
+//'name' will be a STRING, but it might be blank.
+let name = prompt("What is your name?");
+//If 'name' is blank, then '!' will convert to a Boolean (NOT FALSE)
+//If 'name' is NOT blank, then '!' will convert to a Boolean (NOT TRUE)
+while (!name) {
+  name = prompt("What is your name?");
 }
-//Fizz Buzz
-//Log the numbers from 1 to 100.
-//If the number is divisible by 3 and 5, log "FizzBuzz!"
-//However, if the number is divisible by 3, log 'Fizz!'
-//If the number is divisible by 5, log "Buzz!"
-//Each number should only result in 1 log.
+console.log(name);
+
+let age = prompt("what is your age?");
+age = Number(age);
+console.log(Boolean(NaN));
+
+//TODO: If the user enter something the EXPLICITLY CONVERTS to "NaN", alert them.
+if (!age) {
+  alert("This is not a number!");
+}
