@@ -1,24 +1,26 @@
-//IMPLICIT CONVERSION
-// || means OR
-// If first EXPRESSION is 'truthy' we don't EVALUATE the right hand-side.
-//const name = prompt("What is your name?") || "No name entered!";
-//console.log(name);
+const myArray = ["String", 23, "Another String", true, false];
 
-//TODO: Using 'while' keep 'prompting' while the name field is blank.
-//'name' will be a STRING, but it might be blank.
-let name = prompt("What is your name?");
-//If 'name' is blank, then '!' will convert to a Boolean (NOT FALSE)
-//If 'name' is NOT blank, then '!' will convert to a Boolean (NOT TRUE)
-while (!name) {
-  name = prompt("What is your name?");
-}
-console.log(name);
+//The LENGTH of an ARRAY is always 1 more than the highest index.
 
-let age = prompt("what is your age?");
-age = Number(age);
-console.log(Boolean(NaN));
+console.log(myArray[1]); //23
+console.log(myArray.length); //5
 
-//TODO: If the user enter something the EXPLICITLY CONVERTS to "NaN", alert them.
-if (!age) {
-  alert("This is not a number!");
+console.log(myArray[99]); //undefined
+myArray[1] = 177;
+myArray[1000] = "James";
+console.log(myArray[1000]); //James
+console.log(myArray.length); //1001
+console.log(myArray[888]);
+
+const data = [
+  { Name: "Manva", hobbies: ["eating", "cooking", "poker"] },
+  { name: "Dhnav" },
+  { name: "James" }
+];
+
+console.log(data[0].hobbies[2]);
+
+//Iterate over data and log every name.
+for (let i = 0; i <= data.length - 1; i++) {
+  console.log(data[i].name);
 }
